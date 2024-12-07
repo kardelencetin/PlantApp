@@ -7,7 +7,16 @@
 
     <fragment
         android:id="@+id/getStartedFragment"
-        android:name="com.kardelencetin.plantapp.feature.getstarted.view.GetStartedFragment"
+        android:name="com.kardelencetin.plantapp.feature.getstarted.view.fragment.GetStartedFragment"
         android:label="fragment_get_started"
-        tools:layout="@layout/fragment_get_started" />
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStartedFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.kardelencetin.plantapp.feature.onboarding.view.fragment.OnboardingFragment"
+        android:label="fragment_onboarding"
+        tools:layout="@layout/fragment_onboarding" />
 </navigation>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_getstarted"
-    tools:context=".feature.getstarted.view.GetStartedFragment">
+    tools:context=".feature.getstarted.view.fragment.GetStartedFragment">
 
     <TextView
         android:id="@+id/textWelcome"
