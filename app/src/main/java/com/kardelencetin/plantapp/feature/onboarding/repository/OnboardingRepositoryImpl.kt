@@ -8,7 +8,7 @@ class OnboardingRepositoryImpl @Inject constructor() : OnboardingRepository {
     override fun getOnboardingItems(): List<OnboardingItem> {
         return listOf(
             OnboardingItem(
-                title = "Take a photo to identify the plant!",
+                title = "Take a photo to identify \nthe plant!",
                 imageUrl = R.drawable.onboarding_first
             ),
             OnboardingItem(

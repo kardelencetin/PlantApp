@@ -3,6 +3,7 @@ package com.kardelencetin.plantapp.feature.onboarding.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -11,7 +12,8 @@ import com.kardelencetin.plantapp.R
 import com.kardelencetin.plantapp.feature.onboarding.model.OnboardingItem
 
 class OnboardingAdapter(
-    private var items: List<OnboardingItem>
+    private var items: List<OnboardingItem>,
+    private val onButtonClick: (Int) -> Unit
 ) : RecyclerView.Adapter<OnboardingAdapter.OnboardingViewHolder>() {
 
     fun setItems(newItems: List<OnboardingItem>) {
@@ -27,6 +29,10 @@ class OnboardingAdapter(
     override fun onBindViewHolder(holder: OnboardingViewHolder, position: Int) {
         val item = items[position]
         holder.bind(item)
+
+        holder.itemView.findViewById<Button>(R.id.buttonOnBoarding).setOnClickListener {
+            onButtonClick(position)
+        }
     }
 
     override fun getItemCount(): Int = items.size
