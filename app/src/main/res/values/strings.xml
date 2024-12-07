@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">PlantApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to">Welcome to PlantApp</string>
+    <string name="welcome_definition">Identify more than 3000+ plants with \n88% accuracy.</string>
+    <string name="privacy_definition">By tapping next, you are agreeing to PlantID Terms of Use Privacy Policy.</string>
 </resources>

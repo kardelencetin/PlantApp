@@ -1,16 +1,18 @@
 package com.kardelencetin.plantapp.feature.getstarted.repository
 
+import android.content.Context
 import com.kardelencetin.plantapp.R
 import com.kardelencetin.plantapp.feature.getstarted.model.GetStartedItem
-import javax.inject.Inject
 
-class GetStartedRepositoryImpl @Inject constructor() : GetStartedRepository {
+class GetStartedRepositoryImpl(
+    private val context: Context
+) : GetStartedRepository {
     override fun getGetStartedItems(): GetStartedItem {
         return GetStartedItem(
-                title = "Welcome to PlantApp",
-                description = "Identify more than 3000+ plants with \n88% accuracy.",
-                imageUrl = R.drawable.plant,
-                privacy = "By tapping next, you are agreeing to PlantID \n Terms of Use Privacy Policy."
+            title = context.getString(R.string.welcome_to),
+            description =  context.getString(R.string.welcome_definition),
+            imageUrl = R.drawable.plant,
+            privacy =  context.getString(R.string.privacy_definition)
         )
     }
 }

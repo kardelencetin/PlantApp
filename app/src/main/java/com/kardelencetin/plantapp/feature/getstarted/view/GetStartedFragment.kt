@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.kardelencetin.plantapp.R
 import com.kardelencetin.plantapp.feature.getstarted.viewmodel.GetStartedViewModel
@@ -26,14 +27,16 @@ class GetStartedFragment : Fragment(R.layout.fragment_get_started) {
         val getStartedButton = view.findViewById<Button>(R.id.buttonGetStarted)
         val privacyTextView = view.findViewById<TextView>(R.id.textPrivacy)
 
-        viewModel.getStartedItems.observe(viewLifecycleOwner) { item ->
-            item?.let {
-                titleTextView.text = it.title
-                descriptionTextView.text = it.description
-                Glide.with(this)
-                    .load(it.imageUrl)
-                    .into(imageView)
-                privacyTextView.text = it.privacy
+        viewLifecycleOwner.lifecycleScope.launchWhenStarted {
+            viewModel.getStartedItems.collect { item ->
+                item?.let {
+                    titleTextView.text = it.title
+                    descriptionTextView.text = it.description
+                    Glide.with(this@GetStartedFragment)
+                        .load(it.imageUrl)
+                        .into(imageView)
+                    privacyTextView.text = it.privacy
+                }
             }
         }
 
