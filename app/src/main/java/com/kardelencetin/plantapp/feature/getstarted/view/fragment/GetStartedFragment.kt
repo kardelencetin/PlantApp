@@ -1,4 +1,4 @@
-package com.kardelencetin.plantapp.feature.getstarted.view
+package com.kardelencetin.plantapp.feature.getstarted.view.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.kardelencetin.plantapp.R
 import com.kardelencetin.plantapp.feature.getstarted.viewmodel.GetStartedViewModel
@@ -41,7 +42,7 @@ class GetStartedFragment : Fragment(R.layout.fragment_get_started) {
         }
 
         getStartedButton.setOnClickListener {
-            //findNavController().navigate(R.id.action_getStarted_to_nextFragment)
+            findNavController().navigate(R.id.action_getStartedFragment_to_onboardingFragment)
         }
     }
 }
