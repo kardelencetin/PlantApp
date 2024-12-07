@@ -18,5 +18,13 @@
         android:id="@+id/onboardingFragment"
         android:name="com.kardelencetin.plantapp.feature.onboarding.view.fragment.OnboardingFragment"
         android:label="fragment_onboarding"
-        tools:layout="@layout/fragment_onboarding" />
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_paywallFragment"
+            app:destination="@id/paywallFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paywallFragment"
+        android:name="com.kardelencetin.plantapp.feature.paywall.view.fragment.PaywallFragment"
+        android:label="PaywallFragment" />
 </navigation>

@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.kardelencetin.plantapp.R
 import com.kardelencetin.plantapp.feature.onboarding.adapter.OnboardingAdapter
@@ -28,9 +30,10 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         viewPager = view.findViewById(R.id.viewPager)
         indicatorLayout = view.findViewById(R.id.indicatorLayout)
 
-        val adapter = OnboardingAdapter(emptyList())
+        val adapter = OnboardingAdapter(emptyList()) { position ->
+            handleButtonClick(position)
+        }
         viewPager.adapter = adapter
-
         viewModel.onboardingItems.observe(viewLifecycleOwner) { items ->
             adapter.setItems(items)
             setupIndicators(items.size)
@@ -40,10 +43,6 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 setCurrentIndicator(position)
-
-                if (position == adapter.itemCount - 1) {
-                    // findNavController().navigate(R.id.action_onboardingFragment_to_paywallFragment)
-                }
             }
         })
     }
@@ -67,6 +66,14 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             }
         }
         indicators.forEach { indicatorLayout.addView(it) }
+    }
+
+    private fun handleButtonClick(position: Int) {
+        if (position == viewModel.onboardingItems.value?.size?.minus(1)) {
+            findNavController().navigate(R.id.action_onboardingFragment_to_paywallFragment)
+        } else {
+            viewPager.currentItem = position + 1
+        }
     }
 
     private fun setCurrentIndicator(index: Int) {
