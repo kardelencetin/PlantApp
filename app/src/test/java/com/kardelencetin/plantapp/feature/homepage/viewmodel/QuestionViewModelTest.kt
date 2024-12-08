@@ -1,10 +1,9 @@
-package com.kardelencetin.plantapp.feature.homepage
+package com.kardelencetin.plantapp.feature.homepage.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.kardelencetin.plantapp.core.util.getOrAwaitValue
 import com.kardelencetin.plantapp.feature.homepage.roomdb.entity.QuestionEntity
 import com.kardelencetin.plantapp.feature.homepage.usecase.QuestionUseCase
-import com.kardelencetin.plantapp.feature.homepage.viewmodel.QuestionViewModel
 import io.mockk.coEvery
 import io.mockk.mockk
 import kotlinx.coroutines.Dispatchers

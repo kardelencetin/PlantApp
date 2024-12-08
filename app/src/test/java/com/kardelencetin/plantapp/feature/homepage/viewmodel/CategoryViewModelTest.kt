@@ -1,11 +1,10 @@
-package com.kardelencetin.plantapp.feature.homepage
+package com.kardelencetin.plantapp.feature.homepage.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.kardelencetin.plantapp.core.util.getOrAwaitValue
 import com.kardelencetin.plantapp.feature.homepage.model.Image
 import com.kardelencetin.plantapp.feature.homepage.roomdb.entity.CategoryEntity
 import com.kardelencetin.plantapp.feature.homepage.usecase.CategoryUseCase
-import com.kardelencetin.plantapp.feature.homepage.viewmodel.CategoryViewModel
 import io.mockk.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

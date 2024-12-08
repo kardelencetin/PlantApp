@@ -29,6 +29,82 @@ Plant Mobile Application
 Folder Structure
 
 ```bash  
+.
+└── PlantApp/
+    ├── app/
+    │   └── src/
+    │       ├── main/
+    │       │   ├── AndroidManifest
+    │       │   ├── res
+    │       │   │      ├── anim
+    │       │   │      ├── drawable 
+    │       │   │      ├── font
+    │       │   │      ├── menu
+    │       │   │      └── navigation
+    │       │   │                
+    │       │   └── java/
+    │       │       └── com/
+    │       │           └── kardelencetin/
+    │       │                       └── plantapp/
+    │       │                               ├── core/
+    │       │                               │    ├── preferences
+    │       │                               │    └── util
+    │       │                               └── feature/
+    │       │                                     ├── getstarted
+    │       │                                     │         ├── model
+    │       │                                     │         ├── module 
+    │       │                                     │         ├── repository
+    │       │                                     │         ├── usecase
+    │       │                                     │         ├── view/fragment
+    │       │                                     │         └── viewmodel
+    │       │                                     ├── homepage
+    │       │                                     │        ├── adapter
+    │       │                                     │        ├── model
+    │       │                                     │        ├── module 
+    │       │                                     │        ├── repository
+    │       │                                     │        ├── roomdb
+    │       │                                     │        │        ├── dao
+    │       │                                     │        │        ├── database
+    │       │                                     │        │        └── entity
+    │       │                                     │        ├── service
+    │       │                                     │        ├── usecase
+    │       │                                     │        ├── util
+    │       │                                     │        ├── view
+    │       │                                     │        │      ├── activity
+    │       │                                     │        │      └── fragment
+    │       │                                     │        └── viewmodel
+    │       │                                     ├── main                                
+    │       │                                     │      └── view/activity                                                    
+    │       │                                     ├── onboarding
+    │       │                                     │        ├── adapter
+    │       │                                     │        ├── model
+    │       │                                     │        ├── module 
+    │       │                                     │        ├── repository
+    │       │                                     │        ├── usecase
+    │       │                                     │        ├── view
+    │       │                                     │        │      └── fragment
+    │       │                                     │        └── viewmodel
+    │       │                                     └── paywall
+    │       │                                               ├── adapter
+    │       │                                               ├── model
+    │       │                                               ├── module 
+    │       │                                               ├── repository
+    │       │                                               ├── usecase
+    │       │                                               ├── view
+    │       │                                               │      └── fragment
+    │       │                                               └── viewmodel
+    │       │
+    │       │
+    │       │
+    │       │── test [unitTest]/
+    │       │       └── java/
+    │       │             └── com.kardelencetin.plantapp.feature.homepage           
+    │       │                                                           └──viewmodel                                
+    │       │                      
+    │       │        
+    │       └── build.gradle
+    ├── build.gradle
+    └── settings.gradle
 
 ```
 
