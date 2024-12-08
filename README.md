@@ -173,11 +173,24 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
 ```
 
 #### UI
+Starting Screen:
+<img src="starting.png" alt="Onboarding Screen 1" width="300"/>
 ![Alt Text](/starting.png)
+
+Welcome Screen:
+<img src="welcome.png" alt="Onboarding Screen 1" width="300"/>
 ![Alt Text](/welcome.png)
+
+Onboarding Screen:
+<img src="onboarding1.png" alt="Onboarding Screen 1" width="300"/>
+<img src="onboarding2.png" alt="Onboarding Screen 1" width="300"/>
 ![Alt Text](/onboarding1.png)
 ![Alt Text](/onboarding2.png)
+
+Home Screen:
+<img src="home.png" alt="Home Page" width="300"/>
 ![Alt Text](/home.png)
+
 
 README.md dosyası [readme.so](https://readme.so/) kullanılarak oluşturulmuştur.
 
