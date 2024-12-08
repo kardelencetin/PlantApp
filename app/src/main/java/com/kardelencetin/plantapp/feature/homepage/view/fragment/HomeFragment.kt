@@ -26,12 +26,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         recyclerCategories.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
+        val recyclerQuestions = view.findViewById<RecyclerView>(R.id.recyclerQuestions)
+        recyclerQuestions.layoutManager = LinearLayoutManager(requireContext())
+
         categoryViewModel.categoriesLiveData.observe(viewLifecycleOwner) { categories ->
             recyclerCategories.adapter = CategoriesAdapter(categories)
         }
-
-        val recyclerQuestions = view.findViewById<RecyclerView>(R.id.recyclerQuestions)
-        recyclerQuestions.layoutManager = LinearLayoutManager(requireContext())
 
         questionViewModel.questionsLiveData.observe(viewLifecycleOwner) { questions ->
             recyclerQuestions.adapter = QuestionsAdapter(questions)
