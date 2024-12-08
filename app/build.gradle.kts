@@ -66,11 +66,19 @@ dependencies {
     implementation (libs.hilt.android)
     kapt (libs.hilt.android.compiler)
     implementation (libs.picasso)
-
     implementation (libs.androidx.room.runtime.v250)
     kapt ("androidx.room:room-compiler:2.6.1")
     implementation (libs.androidx.room.ktx.v250)
-
     implementation (libs.kotlinx.coroutines.core)
     implementation (libs.kotlinx.coroutines.android.v164)
+    testImplementation (libs.junit)
+    testImplementation (libs.mockito.core)
+    testImplementation (libs.mockito.kotlin)
+    testImplementation (libs.kotlinx.coroutines.test)
+    testImplementation (libs.mockk)
+    testImplementation (libs.androidx.junit.v115)
+    testImplementation (libs.androidx.core)
+    testImplementation (libs.robolectric)
+    testImplementation (libs.kotlinx.coroutines.test)
+    testImplementation (libs.androidx.core.testing)
 }

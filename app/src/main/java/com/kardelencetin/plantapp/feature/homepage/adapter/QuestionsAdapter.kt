@@ -19,7 +19,9 @@ class QuestionsAdapter(private val questions: List<QuestionEntity>) :
         private val subtitleView: TextView = view.findViewById(R.id.questionSubtitle)
 
         fun bind(question: QuestionEntity) {
-            Picasso.get().load(question.imageUri).into(imageView)
+            Picasso.get()
+                .load(question.imageUri)
+                .into(imageView)
             titleView.text = question.title
             subtitleView.text = question.subtitle
         }

@@ -9,7 +9,6 @@ class CategoryRepository @Inject constructor(
     private val api: PlantService,
     private val categoryDao: CategoryDao
 ) {
-
     suspend fun getCategories(): List<CategoryEntity> {
         val cachedCategories = categoryDao.getAllCategories()
 

@@ -8,6 +8,8 @@ import com.kardelencetin.plantapp.feature.homepage.roomdb.dao.CategoryDao
 import com.kardelencetin.plantapp.feature.homepage.roomdb.dao.QuestionDao
 import com.kardelencetin.plantapp.feature.homepage.roomdb.database.PlantDatabase
 import com.kardelencetin.plantapp.feature.homepage.service.PlantService
+import com.kardelencetin.plantapp.feature.homepage.usecase.CategoryUseCase
+import com.kardelencetin.plantapp.feature.homepage.usecase.QuestionUseCase
 import com.kardelencetin.plantapp.feature.homepage.util.Constant.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -63,5 +65,19 @@ object PlantModule {
         questionDao: QuestionDao
     ): QuestionRepository {
         return QuestionRepository(apiService, questionDao)
+    }
+
+    @Provides
+    fun provideCategoryUseCase(
+        repository: CategoryRepository
+    ): CategoryUseCase {
+        return CategoryUseCase(repository)
+    }
+
+    @Provides
+    fun provideQuestionUseCase(
+        repository: QuestionRepository
+    ): QuestionUseCase {
+        return QuestionUseCase(repository)
     }
 }
