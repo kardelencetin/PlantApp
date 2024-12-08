@@ -11,6 +11,7 @@ data class CategoryEntity(
     val name: String,
     val title: String,
     val rank: Int,
-    @Embedded val image: Image,
+    @Embedded(prefix = "image_")
+    val image: Image,
     val lastUpdated: Long
 )

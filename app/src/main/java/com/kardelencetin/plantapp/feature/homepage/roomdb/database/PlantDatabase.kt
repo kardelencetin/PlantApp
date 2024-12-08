@@ -9,10 +9,7 @@ import com.kardelencetin.plantapp.feature.homepage.roomdb.dao.QuestionDao
 import com.kardelencetin.plantapp.feature.homepage.roomdb.entity.CategoryEntity
 import com.kardelencetin.plantapp.feature.homepage.roomdb.entity.QuestionEntity
 
-@Database(
-    entities = [CategoryEntity::class, QuestionEntity::class],
-    version = 1
-)
+@Database(entities = [CategoryEntity::class, QuestionEntity::class], version = 1)
 abstract class PlantDatabase : RoomDatabase() {
 
     abstract fun categoryDao(): CategoryDao
