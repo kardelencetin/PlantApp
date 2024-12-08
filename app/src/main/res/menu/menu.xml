@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_close"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/diagnose"
+        android:icon="@drawable/ic_close"
+        android:title="Diagnose"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/my_garden"
+        android:icon="@drawable/ic_close"
+        android:title="My Garden"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_close"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
+</menu>
