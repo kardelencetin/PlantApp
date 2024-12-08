@@ -40,7 +40,7 @@ The libraries used in the project are as follows.
 
 ```
 
-## Additional Information
+## Additional Informations
 
 - 
  
