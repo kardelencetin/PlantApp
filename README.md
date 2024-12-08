@@ -113,14 +113,48 @@ Folder Structure
 The libraries used in the project are as follows.
 
 ```bash
+-- AndroidX
+- androidx.core:core-ktx
+- androidx.appcompat
+- androidx.constraintlayout
+- androidx.activity
+- androidx.navigation.fragment.ktx
+- androidx.navigation.ui.ktx
+- androidx.room:room-runtime
+- androidx.room:room-ktx
+- androidx.lifecycle:lifecycle-viewmodel-ktx
+- androidx.lifecycle:lifecycle-livedata-ktx
+- androidx.lifecycle:lifecycle-common-java8:
+- androidx.core:core-testing
+- androidx.test.ext:junit
+- androidx.test.espresso:espresso-core
+
+-- UI
+- com.google.android.material:material
+- com.github.bumptech.glide:glide
+- com.squareup.picasso:picasso
+
+-- Network
+- com.squareup.retrofit2:retrofit
+- com.squareup.retrofit2:converter-gson
+
+-- Dependency Injection
+- com.google.dagger:hilt-android
+- com.google.dagger:hilt-android-compiler
+
+-- Coroutines
+- org.jetbrains.kotlinx:kotlinx-coroutines-core
+- org.jetbrains.kotlinx:kotlinx-coroutines-android
+
+-- Unit Test and Mocking
+- junit:junit
+- org.mockito:mockito-core:
+- org.mockito.kotlin:mockito-kotlin
+- io.mockk:mockk
+- org.jetbrains.kotlinx:kotlinx-coroutines-test
+- org.robolectric:robolectric
 
 ```
-
-## Additional Informations
-
-- 
- 
-## 
 
 ## API Calls
 
