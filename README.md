@@ -173,11 +173,11 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
 ```
 
 #### UI
-
-```
-  ![Alt Text](/home.png)
-  
-```
+![Alt Text](/starting.png)
+![Alt Text](/welcome.png)
+![Alt Text](/onboarding1.png)
+![Alt Text](/onboarding2.png)
+![Alt Text](/home.png)
 
 README.md dosyası [readme.so](https://readme.so/) kullanılarak oluşturulmuştur.
 
