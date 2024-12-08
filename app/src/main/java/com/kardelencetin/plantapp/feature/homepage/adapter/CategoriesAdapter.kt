@@ -21,7 +21,11 @@ class CategoriesAdapter(private val categories: List<CategoryEntity>) :
             Glide.with(itemView.context)
                 .load(category.image.url)
                 .into(imageView)
-            titleView.text = category.title
+            val fullTitle = category.title
+            val firstPart = fullTitle.split(" ").firstOrNull() ?: ""
+            val remainingPart = fullTitle.split(" ").drop(1).joinToString(" ")
+            val styledText = "$firstPart\n$remainingPart"
+            titleView.text = styledText
         }
     }
 
