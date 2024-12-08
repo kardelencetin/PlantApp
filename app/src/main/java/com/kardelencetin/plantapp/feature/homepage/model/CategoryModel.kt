@@ -8,12 +8,19 @@ data class CategoryResponse(
 data class Category(
     val id: Int,
     val name: String,
+    val createdAt: String,
+    val updatedAt: String,
     val title: String,
     val rank: Int,
     val image: Image
 )
 
 data class Image(
+    val id: Int,
+    val name: String,
+    val width: Int,
+    val height: Int,
+    val size: Double,
     val url: String
 )
 
