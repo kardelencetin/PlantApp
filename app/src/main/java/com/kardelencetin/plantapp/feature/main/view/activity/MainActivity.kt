@@ -18,10 +18,15 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         if (PreferencesManager.isOnboardingCompleted(this)) {
-            startActivity(Intent(this, HomeActivity::class.java))
-            finish()
+            navigateToHome()
         } else {
             setContentView(R.layout.activity_main)
         }
+    }
+
+    private fun navigateToHome() {
+        startActivity(Intent(this, HomeActivity::class.java))
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+        finish()
     }
 }

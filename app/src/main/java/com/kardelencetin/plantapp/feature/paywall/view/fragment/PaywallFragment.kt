@@ -26,7 +26,7 @@ class PaywallFragment : Fragment(R.layout.fragment_paywall) {
 
             val intent = Intent(requireContext(), HomeActivity::class.java)
             startActivity(intent)
-
+            requireActivity().overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
             requireActivity().finish()
         }
     }

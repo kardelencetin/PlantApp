@@ -12,7 +12,11 @@
         tools:layout="@layout/fragment_get_started" >
         <action
             android:id="@+id/action_getStartedFragment_to_onboardingFragment"
-            app:destination="@id/onboardingFragment" />
+            app:destination="@id/onboardingFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/onboardingFragment"
@@ -21,10 +25,18 @@
         tools:layout="@layout/fragment_onboarding" >
         <action
             android:id="@+id/action_onboardingFragment_to_paywallFragment"
-            app:destination="@id/paywallFragment" />
+            app:destination="@id/paywallFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/paywallFragment"
         android:name="com.kardelencetin.plantapp.feature.paywall.view.fragment.PaywallFragment"
-        android:label="PaywallFragment" />
+        android:label="PaywallFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"/>
 </navigation>
