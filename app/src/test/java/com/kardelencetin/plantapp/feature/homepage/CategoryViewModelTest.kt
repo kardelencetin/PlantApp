@@ -42,8 +42,8 @@ class CategoryViewModelTest {
     @Test
     fun `fetchCategories should update categoriesLiveData when successful`() = runTest {
         val mockCategories = listOf(
-            CategoryEntity(1, "Test Name", "Test Title", 1, Image("url"), 123456789L),
-            CategoryEntity(2, "Another Name", "Another Title", 2, Image("url2"), 123456789L)
+            CategoryEntity(1, "Test Name", "Test Title", 1, Image(1, "image1", 100, 100, 100.0, "img_url"), 123456789L),
+            CategoryEntity(2, "Another Name", "Another Title", 2, Image(2, "image2", 100, 100, 100.0, "img_url1"), 123456789L)
         )
 
         coEvery { categoryUseCase.invoke() } returns mockCategories

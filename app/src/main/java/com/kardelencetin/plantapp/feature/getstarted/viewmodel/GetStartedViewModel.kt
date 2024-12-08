@@ -1,7 +1,5 @@
 package com.kardelencetin.plantapp.feature.getstarted.viewmodel
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.kardelencetin.plantapp.feature.getstarted.model.GetStartedItem
 import com.kardelencetin.plantapp.feature.getstarted.usecase.GetStartedItemsUseCase
