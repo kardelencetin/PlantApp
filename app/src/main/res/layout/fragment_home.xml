@@ -1,36 +1,168 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_getstarted"
+    tools:context=".feature.homepage.view.fragment.HomeFragment">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/PlantLover"
+        android:layout_marginTop="68dp"
+        android:layout_marginStart="16dp"
         android:text="Hi, plant lover!"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_margin="16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerCategories"
+    <TextView
+        android:id="@+id/good_afternoon"
+        style="@style/PlantLover"
+        android:text="Good Afternoon! ⛅️"
+        android:layout_marginStart="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/searchBarContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/title"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="8dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/good_afternoon">
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="12dp"
+            android:contentDescription="Search Icon"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="190dp"
+            android:background="@android:color/transparent"
+            android:hint="Search for plants"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/searchIcon"
+            app:layout_constraintStart_toStartOf="@id/searchIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.555" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/freePremiumContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:background="@drawable/email_box"
+        app:layout_constraintTop_toBottomOf="@id/searchBarContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/premiumIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Premium Icon"
+            android:src="@drawable/email"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/freePremiumText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="FREE Premium Available \nTap to upgrade your account!"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:textColor="#e5c88b"
+            app:layout_constraintStart_toEndOf="@id/premiumIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/premiumArrow" />
+
+        <ImageView
+            android:id="@+id/premiumArrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Arrow Icon"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/get_started"
+        style="@style/PlantLover"
+        android:text="Get Started"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/freePremiumContainer" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerQuestions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/recyclerCategories"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="8dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/get_started" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerQuestions"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

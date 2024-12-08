@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.kardelencetin.plantapp.R
@@ -23,11 +24,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerCategories = view.findViewById<RecyclerView>(R.id.recyclerCategories)
-        recyclerCategories.layoutManager =
-            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        recyclerCategories.layoutManager = GridLayoutManager(requireContext(), 2)
 
         val recyclerQuestions = view.findViewById<RecyclerView>(R.id.recyclerQuestions)
-        recyclerQuestions.layoutManager = LinearLayoutManager(requireContext())
+        recyclerQuestions.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
         categoryViewModel.categoriesLiveData.observe(viewLifecycleOwner) { categories ->
             recyclerCategories.adapter = CategoriesAdapter(categories)

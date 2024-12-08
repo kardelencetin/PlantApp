@@ -16,15 +16,13 @@ class QuestionsAdapter(private val questions: List<QuestionEntity>) :
     class QuestionViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val imageView: ImageView = view.findViewById(R.id.questionImage)
         private val titleView: TextView = view.findViewById(R.id.questionTitle)
-        private val subtitleView: TextView = view.findViewById(R.id.questionSubtitle)
 
         fun bind(question: QuestionEntity) {
             Picasso.get()
                 .load(question.imageUri)
                 .into(imageView)
             titleView.text = question.title
-            subtitleView.text = question.subtitle
-        }
+       }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuestionViewHolder {
