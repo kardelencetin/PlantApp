@@ -172,6 +172,13 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
   GET /getQuestions"
 ```
 
+#### UI
+
+```
+  ![Alt Text](image.png)
+  
+```
+
 README.md dosyası [readme.so](https://readme.so/) kullanılarak oluşturulmuştur.
 
 
