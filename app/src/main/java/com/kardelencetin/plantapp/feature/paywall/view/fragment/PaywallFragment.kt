@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import androidx.fragment.app.viewModels
 import com.kardelencetin.plantapp.R
+import com.kardelencetin.plantapp.core.preferences.PreferencesManager
 import com.kardelencetin.plantapp.feature.homepage.view.activity.HomeActivity
 import com.kardelencetin.plantapp.feature.paywall.viewmodel.PaywallViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -20,10 +21,12 @@ class PaywallFragment : Fragment(R.layout.fragment_paywall) {
         super.onViewCreated(view, savedInstanceState)
 
         val buttonClose = view.findViewById<Button>(R.id.buttonClose)
-
         buttonClose.setOnClickListener {
+            PreferencesManager.setOnboardingCompleted(requireContext())
+
             val intent = Intent(requireContext(), HomeActivity::class.java)
             startActivity(intent)
+
             requireActivity().finish()
         }
     }
