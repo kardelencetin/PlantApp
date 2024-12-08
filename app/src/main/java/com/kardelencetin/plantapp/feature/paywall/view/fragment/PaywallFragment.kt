@@ -5,9 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.Button
-import android.widget.ImageView
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.findNavController
 import com.kardelencetin.plantapp.R
 import com.kardelencetin.plantapp.feature.homepage.view.activity.HomeActivity
 import com.kardelencetin.plantapp.feature.paywall.viewmodel.PaywallViewModel
