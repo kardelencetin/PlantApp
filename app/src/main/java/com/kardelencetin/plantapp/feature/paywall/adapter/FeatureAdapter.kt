@@ -15,6 +15,7 @@ class FeatureAdapter (
 
     inner class FeatureViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val title: TextView = view.findViewById(R.id.featureTitle)
+        val description: TextView = view.findViewById(R.id.featureDescription)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeatureViewHolder {
@@ -29,5 +30,6 @@ class FeatureAdapter (
         val option = feature[position]
 
         holder.title.text = option.title
+        holder.description.text = option.description
     }
 }
