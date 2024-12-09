@@ -43,7 +43,7 @@ class QuestionViewModelTest {
     }
 
     @Test
-    fun `fetchCategories should update categoriesLiveData when successful`() = runTest {
+    fun `fetchQuestions should update questionsLiveData when successful`() = runTest {
         val mockCategories = listOf(
             QuestionEntity(1, "title1", "subtitle1", "image1", "uri1", 1, 123456789L),
             QuestionEntity(2, "title2", "subtitle2", "image2", "uri2", 2, 123456788L),
@@ -57,7 +57,7 @@ class QuestionViewModelTest {
     }
 
     @Test
-    fun `fetchCategories should handle exception and not update categoriesLiveData`() = runTest {
+    fun `fetchQuestions should handle exception and not update questionsLiveData`() = runTest {
         coEvery { questionUseCase.invoke() } throws RuntimeException("Test exception")
 
         viewModel.fetchQuestions()
