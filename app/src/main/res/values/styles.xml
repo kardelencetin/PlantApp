@@ -50,10 +50,9 @@
     </style>
 
     <style name="TryForFreeButton">
-    <item name="android:layout_width">345dp</item>
+    <item name="android:layout_width">365dp</item>
     <item name="android:layout_height">65dp</item>
     <item name="android:background">@drawable/button</item>
-    <item name="android:text">Continue</item>
     <item name="android:textColor">@color/white</item>
     <item name="android:textSize">16sp</item>
 </style>

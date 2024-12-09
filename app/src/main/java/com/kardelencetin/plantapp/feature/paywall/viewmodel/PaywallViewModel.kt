@@ -10,7 +10,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PaywallViewModel @Inject constructor(
-    private val getPaywallOptionsUseCase: GetPaywallOptionsUseCase
+    private val getPaywallOptionUseCase: GetPaywallOptionsUseCase
 ) : ViewModel() {
 
     private val _paywallOptions = MutableLiveData<List<PaywallOption>>()
@@ -21,6 +21,6 @@ class PaywallViewModel @Inject constructor(
     }
 
     private fun loadPaywallOptions() {
-        _paywallOptions.value = getPaywallOptionsUseCase()
+        _paywallOptions.value = getPaywallOptionUseCase()
     }
 }

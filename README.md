@@ -172,6 +172,33 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
   GET /getQuestions"
 ```
 
+## UI
+
+#### Starting Screen
+<p>
+  <img src="starting.png" alt="Starting Screen" width="200"/>
+</p>
+
+#### Welcome Screen
+<p>
+  <img src="welcome.png" alt="Welcome Screen" width="200"/>
+</p>
+
+#### Onboarding Screen
+<p>
+  <img src="onboarding1.png" alt="Onboarding Screen 1" width="200"/>
+  <img src="onboarding2.png" alt="Onboarding Screen 2" width="200"/>
+</p>
+
+#### Paywall Screen
+<p>
+</p>
+
+#### Home Screen
+<p>
+  <img src="home.png" alt="Home Page" width="200"/>
+</p>
+
 README.md dosyası [readme.so](https://readme.so/) kullanılarak oluşturulmuştur.
 
 
