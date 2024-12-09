@@ -192,7 +192,7 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
 
 #### Paywall Screen
 <p>
-  <img src="paywall_screen.png" alt="Paywall Screen 2" width="200"/>
+  <img src="paywall_readme.png" alt="Paywall Screen 2" width="200"/>
 </p>
 
 #### Home Screen

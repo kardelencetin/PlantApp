@@ -4,18 +4,29 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kardelencetin.plantapp.R
 import com.kardelencetin.plantapp.feature.paywall.model.FeatureOption
+import com.squareup.picasso.Picasso
 
 class FeatureAdapter (
     private val feature: List<FeatureOption>
 ) : RecyclerView.Adapter<FeatureAdapter.FeatureViewHolder>() {
 
-    inner class FeatureViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val title: TextView = view.findViewById(R.id.featureTitle)
-        val description: TextView = view.findViewById(R.id.featureDescription)
+    class FeatureViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        private val title: TextView = view.findViewById(R.id.featureTitle)
+        private val description: TextView = view.findViewById(R.id.featureDescription)
+        private val image: ImageView = view.findViewById(R.id.featureIcon)
+
+        fun bind(feature: FeatureOption) {
+            Picasso.get()
+                .load(feature.image)
+                .into(image)
+            title.text = feature.title
+            description.text = feature.description
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeatureViewHolder {
@@ -27,9 +38,6 @@ class FeatureAdapter (
     override fun getItemCount(): Int = feature.size
 
     override fun onBindViewHolder(holder: FeatureViewHolder, @SuppressLint("RecyclerView") position: Int) {
-        val option = feature[position]
-
-        holder.title.text = option.title
-        holder.description.text = option.description
+        holder.bind(feature[position])
     }
 }
