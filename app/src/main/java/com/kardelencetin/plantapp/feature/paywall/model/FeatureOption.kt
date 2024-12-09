@@ -1,6 +1,6 @@
 package com.kardelencetin.plantapp.feature.paywall.model
 
-data class PaywallOption(
+data class FeatureOption(
     val title: String,
     val description: String
 )
