@@ -21,7 +21,7 @@
         android:id="@+id/buttonClose"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_margin="16dp"
+        android:layout_margin="32dp"
         android:contentDescription="Close Button"
         android:src="@drawable/ic_close"
         app:layout_constraintTop_toTopOf="parent"
