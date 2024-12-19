@@ -9,8 +9,9 @@ Plant Mobile Application
 - [Structure]()
     - [Folder Structure]()
 - [Libraries]()
-- [Additional Informations]()
 - [API Calls]()
+- [UI]()
+
 
 ## Requirements
 
