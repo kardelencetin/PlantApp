@@ -175,11 +175,6 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
 
 ## UI
 
-#### Starting Screen
-<p>
-  <img src="starting.png" alt="Starting Screen" width="200"/>
-</p>
-
 #### Welcome Screen
 <p>
   <img src="welcome.png" alt="Welcome Screen" width="200"/>
