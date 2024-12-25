@@ -177,7 +177,7 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
 
 #### Welcome Screen
 <p>
-  <img src="welcome.png" alt="Welcome Screen" width="200"/>
+  <img src="get_started.png" alt="Welcome Screen" width="200"/>
 </p>
 
 #### Onboarding Screen
