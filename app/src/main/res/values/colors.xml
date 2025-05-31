@@ -4,4 +4,5 @@
     <color name="search_text_color">#ABABAB</color>
     <color name="search_text_hint">#AFAFAF</color>
     <color name="free_avaible_text">#E5C88B</color>
+    <color name="fab_bg">#28AF6E</color>
 </resources>
