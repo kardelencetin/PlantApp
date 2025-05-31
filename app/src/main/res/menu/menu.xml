@@ -1,23 +1,27 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:icon="@drawable/home"
+        android:title="@string/menu_home" />
 
     <item
         android:id="@+id/diagnose"
-        android:icon="@drawable/ic_diagnose"
-        android:title="Diagnose" />
+        android:icon="@drawable/healthcare"
+        android:title="@string/menu_diagnose" />
+
+    <item
+        android:id="@+id/nav_placeholder"
+        android:enabled="false"
+        android:title=""
+        android:checkable="false" />
 
     <item
         android:id="@+id/my_garden"
-        android:icon="@drawable/ic_garden"
-        android:title="My Garden" />
+        android:icon="@drawable/garden"
+        android:title="@string/menu_garden" />
 
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/ic_profile"
-        android:title="Profile" />
+        android:icon="@drawable/profile"
+        android:title="@string/menu_profile" />
 </menu>
