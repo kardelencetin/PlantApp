@@ -30,6 +30,7 @@ picasso = "2.71828"
 retrofitVersion = "2.8.1"
 robolectric = "4.9"
 roomCompiler = "2.5.0"
+roomCompilerVersion = "2.7.1"
 roomKtx = "2.5.0"
 roomRuntime = "2.6.1"
 roomRuntimeVersion = "2.5.0"
@@ -51,6 +52,7 @@ androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fr
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
 androidx-room-compiler-v250 = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+androidx-room-compiler-v271 = { module = "androidx.room:room-compiler", version.ref = "roomCompilerVersion" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
 androidx-room-ktx-v250 = { module = "androidx.room:room-ktx", version.ref = "roomKtx" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }

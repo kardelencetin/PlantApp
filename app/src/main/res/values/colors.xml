@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources />
+<resources>
+    <color name="home_header_text_color">#13231B</color>
+    <color name="search_text_color">#ABABAB</color>
+    <color name="search_text_hint">#AFAFAF</color>
+    <color name="free_avaible_text">#E5C88B</color>
+</resources>
