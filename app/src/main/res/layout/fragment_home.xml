@@ -30,7 +30,6 @@
             android:fontFamily="@font/roboto"
             android:text="@string/plant_lover_text"
             android:textColor="@color/home_header_text_color"
-            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -147,7 +146,7 @@
                         android:text="@string/free_premium_text"
                         android:fontFamily="@font/roboto"
                         android:textStyle="bold"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         android:textColor="@color/free_avaible_text" />
 
                     <TextView
@@ -156,8 +155,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tap_to_upgrade_text"
                         android:fontFamily="@font/roboto"
-                        android:textSize="12sp"
-                        android:textColor="#e5c88b"
+                        android:textSize="14sp"
+                        android:textColor="@color/free_avaible_text"
                         android:layout_marginTop="2dp"/>
                 </LinearLayout>
 
@@ -227,7 +226,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/scan"
             app:tint="@android:color/white"
-            app:backgroundTint="#28AF6E"
+            app:backgroundTint="@color/fab_bg"
             android:elevation="16dp"
             android:layout_gravity="center"/>
     </FrameLayout>
