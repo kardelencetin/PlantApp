@@ -23,6 +23,7 @@ class GetStartedFragment : Fragment(R.layout.fragment_get_started) {
         super.onViewCreated(view, savedInstanceState)
 
         val titleTextView = view.findViewById<TextView>(R.id.textWelcome)
+        val textPlantApp = view.findViewById<TextView>(R.id.textPlantApp)
         val descriptionTextView = view.findViewById<TextView>(R.id.textDescription)
         val imageView = view.findViewById<ImageView>(R.id.imagePlant)
         val getStartedButton = view.findViewById<Button>(R.id.buttonGetStarted)
@@ -32,6 +33,7 @@ class GetStartedFragment : Fragment(R.layout.fragment_get_started) {
             viewModel.getStartedItems.collect { item ->
                 item?.let {
                     titleTextView.text = it.title
+                    textPlantApp.text = it.titlePlantApp
                     descriptionTextView.text = it.description
                     Glide.with(this@GetStartedFragment)
                         .load(it.imageUrl)
