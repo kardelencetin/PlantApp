@@ -21,4 +21,5 @@
     <string name="arrow_icon">Arrow Icon</string>
     <string name="fab_content_desc">Fab Icon Content Desc</string>
     <string name="get_started">Get Started</string>
+    <string name="continue_button_text">Continue</string>
 </resources>
