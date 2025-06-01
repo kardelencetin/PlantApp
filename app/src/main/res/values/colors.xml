@@ -14,4 +14,5 @@
     <color name="welcome_text_color">#13231B</color>
     <color name="desc_text_color">#B2597165</color>
     <color name="privacy_text_color">#B3597165</color>
+    <color name="button_bg">#28AF6E</color>
 </resources>
