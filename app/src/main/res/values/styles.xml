@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#000000</color>
-    <color name="gray">#595757</color>
-    <color name="white">#FFFFFF</color>
-    <color name="button_green">#4CAF50</color>
-    <color name="button_dark_green">#012402</color>
-    <color name="dark_gray">#242624</color>
-
     <style name="WelcomeText">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/welcome_text_color</item>
         <item name="android:textSize">28sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/roboto</item>
     </style>
 
     <style name="PlantLover">
@@ -22,15 +15,16 @@
     </style>
 
     <style name="DescriptionText">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/gray</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/desc_text_color</item>
         <item name="android:textSize">16sp</item>
     </style>
 
     <style name="GetStartedButton">
-        <item name="android:layout_width">345dp</item>
-        <item name="android:layout_height">65dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">64dp</item>
         <item name="android:background">@drawable/button</item>
         <item name="android:text">Get Started</item>
         <item name="android:textColor">@color/white</item>
@@ -57,9 +51,10 @@
     <style name="PrivacyText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">#BAB7B7</item>
-        <item name="android:textSize">13sp</item>
         <item name="android:gravity">center</item>
+        <item name="android:textSize">11sp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/privacy_text_color</item>
     </style>
 
     <style name="BottomNavText" parent="TextAppearance.AppCompat.Caption">

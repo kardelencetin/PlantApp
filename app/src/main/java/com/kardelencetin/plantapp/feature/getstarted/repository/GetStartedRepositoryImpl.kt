@@ -10,6 +10,7 @@ class GetStartedRepositoryImpl(
     override fun getGetStartedItems(): GetStartedItem {
         return GetStartedItem(
             title = context.getString(R.string.welcome_to),
+            titlePlantApp = context.getString(R.string.plant_app),
             description =  context.getString(R.string.welcome_definition),
             imageUrl = R.drawable.plant_started,
             privacy =  context.getString(R.string.privacy_definition)

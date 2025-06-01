@@ -5,4 +5,13 @@
     <color name="search_text_hint">#AFAFAF</color>
     <color name="free_avaible_text">#E5C88B</color>
     <color name="fab_bg">#28AF6E</color>
+    <color name="black">#000000</color>
+    <color name="gray">#595757</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button_green">#4CAF50</color>
+    <color name="button_dark_green">#012402</color>
+    <color name="dark_gray">#242624</color>
+    <color name="welcome_text_color">#13231B</color>
+    <color name="desc_text_color">#B2597165</color>
+    <color name="privacy_text_color">#B3597165</color>
 </resources>
