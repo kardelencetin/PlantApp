@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#101E17">
+    android:background="@color/paywall_bg">
 
     <FrameLayout
-        android:id="@+id/frm"
+        android:id="@+id/headerContainer"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,28 +21,46 @@
             android:scaleType="centerCrop"
             android:src="@drawable/paywall_plant" />
 
-        <TextView
-            android:id="@+id/title"
+        <LinearLayout
+            android:id="@+id/logoPremiumContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
-            android:layout_marginStart="32dp"
-            android:layout_marginBottom="56dp"
-            android:text="PlantApp Premium"
-            android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:textStyle="bold"/>
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/logoPlantApp"
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plant_logo"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/premiumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/premium"
+                android:fontFamily="@font/roboto"
+                android:layout_marginStart="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="27sp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/subtitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="16dp"
             android:layout_marginBottom="32dp"
-            android:text="Access All Features"
+            android:text="@string/access_all_features"
+            android:fontFamily="@font/roboto"
+            android:alpha="0.7"
             android:textColor="@android:color/white"
-            android:textSize="16sp"/>
+            android:textSize="17sp"/>
 
         <ImageView
             android:id="@+id/buttonClose"
@@ -55,18 +73,16 @@
             android:background="@drawable/ic_close"/>
     </FrameLayout>
 
-    <!-- ALTTAKİLER SCROLLABLE OLUYOR -->
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollContent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/frm"
+        app:layout_constraintTop_toBottomOf="@id/headerContainer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Dikeyde düzgün sıralamak için LinearLayout veya ConstraintLayout -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -85,25 +101,25 @@
                 android:padding="2dp"/>
 
             <Button
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
                 android:id="@+id/buttonTryFree"
                 android:textAllCaps="false"
                 style="@style/TryForFreeButton"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
-                android:layout_marginHorizontal="16dp"
-                android:text="Try free for 3 days"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="8dp" />
+                android:text="@string/try_button_text"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp" />
 
             <TextView
                 android:id="@+id/renewable"
                 style="@style/PrivacyText"
                 android:gravity="center"
-                android:text=" After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable"
+                android:text="@string/after_three_day_trial"
                 android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:lineSpacingExtra="0.3dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_width="match_parent"
@@ -113,7 +129,7 @@
                 android:id="@+id/termsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Terms • Privacy • Restore"
+                android:text="@string/terms_conditions"
                 style="@style/PrivacyText"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -122,5 +138,4 @@
                 android:layout_marginBottom="52dp"/>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
