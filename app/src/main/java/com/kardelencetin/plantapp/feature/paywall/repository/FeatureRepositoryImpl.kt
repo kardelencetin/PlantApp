@@ -7,9 +7,9 @@ import javax.inject.Inject
 class FeatureRepositoryImpl @Inject constructor() : FeatureRepository {
     override fun getFeatureOptions(): List<FeatureOption> {
         return listOf(
-            FeatureOption(title = "Unlimited", "Plant Identify", R.drawable.scanner),
-            FeatureOption(title = "Faster", "Process", R.drawable.faster_icon),
-            FeatureOption(title = "Faster", "Process", R.drawable.faster_icon)
+            FeatureOption(title = "Unlimited", "Plant Identify", R.drawable.paywall_feature_scan),
+            FeatureOption(title = "Faster", "Process", R.drawable.paywall_feature_speed),
+            FeatureOption(title = "Faster", "Process", R.drawable.paywall_feature_speed)
         )
     }
 }

@@ -22,4 +22,10 @@
     <string name="fab_content_desc">Fab Icon Content Desc</string>
     <string name="get_started">Get Started</string>
     <string name="continue_button_text">Continue</string>
+    <string name="try_button_text">Try free for 3 days</string>
+    <string name="after_three_day_trial">After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable</string>
+    <string name="terms_conditions">Terms • Privacy • Restore</string>
+    <string name="badge">Save 50%</string>
+    <string name="premium">Premium</string>
+    <string name="access_all_features">Access All Features</string>
 </resources>
