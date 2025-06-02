@@ -30,6 +30,9 @@ Plant Mobile Application
   <img src="getstart.png" alt="Welcome Screen" width="200"/>
   <img src="onboardfirst.png" alt="Onboarding Screen 1" width="200"/>
   <img src="onboardsecond.png" alt="Onboarding Screen 2" width="200"/>
+</p>
+
+<p align="center">
   <img src="paywall.png" alt="Paywall Screen 2" width="200"/>
   <img src="home.png" alt="Home Page" width="200"/>
 </p>
