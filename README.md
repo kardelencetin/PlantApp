@@ -182,8 +182,8 @@ BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
 
 #### Onboarding Screen
 <p>
-  <img src="onboardingfirst.png" alt="Onboarding Screen 1" width="200"/>
-  <img src="onboardingsecond.png" alt="Onboarding Screen 2" width="200"/>
+  <img src="onboarfirst.png" alt="Onboarding Screen 1" width="200"/>
+  <img src="onboardsecond.png" alt="Onboarding Screen 2" width="200"/>
 </p>
 
 #### Paywall Screen
