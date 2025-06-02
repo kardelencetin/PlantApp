@@ -12,18 +12,43 @@ Plant Mobile Application
 - [API Calls]()
 - [UI]()
 
-
 ## Requirements
 
 - Gradle Version: 8.9
 - AGP Version: 8.7.3
 - targetSdk = 34
-- minSdk = 21
+- minSdk = 24
 - compileSdk = 35
 
 ## Software Language and Technology
 
 - It is developed in Kotlin language.
+
+## UI
+
+<p align="center">
+  <img src="getstart.png" alt="Welcome Screen" width="200"/>
+  <img src="onboardfirst.png" alt="Onboarding Screen 1" width="200"/>
+  <img src="onboardsecond.png" alt="Onboarding Screen 2" width="200"/>
+  <img src="paywall.png" alt="Paywall Screen 2" width="200"/>
+  <img src="home.png" alt="Home Page" width="200"/>
+</p>
+
+## API Calls
+
+BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
+
+#### Get Category Lists
+
+```
+  GET /getCategories"
+```
+
+#### Get Question Lists
+
+```
+  GET /getQuestions"
+```
 
 ## Structure
 
@@ -156,45 +181,6 @@ The libraries used in the project are as follows.
 - org.robolectric:robolectric
 
 ```
-
-## API Calls
-
-BASE_URL: "https://dummy-api-jtg6bessta-ey.a.run.app/"
-
-#### Get Category Lists
-
-```
-  GET /getCategories"
-```
-
-#### Get Question Lists
-
-```
-  GET /getQuestions"
-```
-
-## UI
-
-#### Welcome Screen
-<p>
-  <img src="getstart.png" alt="Welcome Screen" width="200"/>
-</p>
-
-#### Onboarding Screen
-<p>
-  <img src="onboardfirst.png" alt="Onboarding Screen 1" width="200"/>
-  <img src="onboardsecond.png" alt="Onboarding Screen 2" width="200"/>
-</p>
-
-#### Paywall Screen
-<p>
-  <img src="paywall.png" alt="Paywall Screen 2" width="200"/>
-</p>
-
-#### Home Screen
-<p>
-  <img src="home.png" alt="Home Page" width="200"/>
-</p>
 
 README.md dosyası [readme.so](https://readme.so/) kullanılarak oluşturulmuştur.
 
